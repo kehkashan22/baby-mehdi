@@ -47,6 +47,10 @@
 	align-items: center;
 }
 
+.bb-custom-firstpage{
+	overflow: hidden;
+}
+
 .bb-custom-firstpage h1 {
 	font-size: 2.3em;
 	line-height: 1.3;
