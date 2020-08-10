@@ -15,6 +15,7 @@
 	<!-- custom demo style -->
 	<link rel="stylesheet" type="text/css" href="css/demo4.css" />
 	<script src="js/modernizr.custom.js"></script>
+	<script src="js/confetti.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
 					</div>
 					<div class="bb-custom-side story">
 						<p>It remains to be seen, how this story will unfold.</p>
-						<img class="bb-custom-image" src="images/open-book.png" alt="image01" />
+						<img class="bb-book-image" src="images/open-book.png" alt="image01" />
 					</div>
 				</div>
 				<div class="bb-item">
@@ -66,8 +67,8 @@
 						<img class="bb-clothes-image" src="images/clothes.png" alt="image01" />
 					</div>
 					<div class="bb-custom-side pants">
-						<img class="bb-swing-image" src="images/dress.png" alt="image01" />
-						<img class="bb-swing-image" src="images/pants.png" alt="image01" />
+						<img class="bb-dress-image" src="images/dress.png" alt="image01" />
+						<img class="bb-pants-image" src="images/pants.png" alt="image01" />
 						<p>If baby wore pants or a dress</p>
 					</div>
 				</div>
@@ -111,7 +112,7 @@
 								<img src="images/gurrl.png" alt="image01" />
 							</div>
 							<div class="back">
-								<img class="girl" src="images/girl.jpg" alt="Avatar">
+								<!-- <img class="girl" src="images/girl.jpg" alt="Avatar"> -->
 							</div>
 						</div>
 					</div>
@@ -188,6 +189,14 @@
 					});
 
 					$("#card").flip();
+
+					$(".front").click(function (e) {
+						confetti.start();
+					})
+
+					$(".back").click(function (e) {
+						confetti.stop();
+					})
 
 					// add keyboard events
 					$(document).keydown(function (e) {

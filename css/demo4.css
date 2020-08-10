@@ -103,7 +103,7 @@
 	height: 40px;
 	text-align: center;
 	border-radius: 2px;
-	background: #1baede;
+	background: #5bbbdb;
 	opacity: 0.7;
 	color: #fff;
 	font-size: 0;
@@ -187,7 +187,10 @@
 
 .story {
 	background-color: #D7F0FF;
-	/* background-color: #aaf0d1; */
+}
+
+.bb-book-image {
+	width: 50%;
 }
 
 
@@ -304,7 +307,7 @@
 
 /* page 8 */
 .announce {
-	background-color: #FEDF6E;
+	background-color: #fade78;
 }
 
 .announce p {
@@ -312,12 +315,16 @@
 }
 
 .announce img {
-	height: 68%;
+	height: 40%;
 }
 
 .click-here {
 	font-weight: bold;
 	color: #3f3f3f;
+}
+
+.front p {
+	font-weight: bold;
 }
 
 .front img {
@@ -338,13 +345,23 @@
     100%{transform: rotate(10deg);}
 }
  
-.bb-swing-image{
+.bb-dress-image{
 	height: 30%;
 	width: 30%;
-    /* -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
     -webkit-animation: swinging 3s ease-in-out backwards infinite;
-    animation: swinging 3s ease-in-out backwards infinite; */
+    animation: swinging 3s ease-in-out backwards infinite;
+}
+
+.bb-pants-image{
+	height: 30%;
+	width: 30%;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3s ease-in-out backwards infinite;
+	animation: swinging 3s ease-in-out backwards infinite;
+	animation-delay: -1s;
 }
 
 .bb-mobile-image{
@@ -367,12 +384,12 @@
 
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    100% { transform: translateY(-20px); }
 }
 
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    100% { transform: translateY(-20px); }
 }
 
 /* flip-card */
@@ -391,12 +408,23 @@
 	background-color: #aaf0d1;
 	border: 1px solid #aaf0d1;
 	opacity: 0.6;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	border-radius: 5px;
 	text-align: center;
 	display: inline-block;
 }
 
 .back {
 	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+	background: url('../images/girl.jpg');
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+		 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
 }
 
 .reveal {
